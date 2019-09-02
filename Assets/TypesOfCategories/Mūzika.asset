@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0bf13c2765340f4ab4ab0c4536edd18, type: 3}
+  m_Name: "M\u016Bzika"
+  m_EditorClassIdentifier: 
+  categoryName: "M\u016Bzika"
+  categoryBackground: {fileID: 21300000, guid: 600f3eea4bf903642911dddc1fd3dfa4, type: 3}
+  categoryIcon: {fileID: 21300000, guid: bacdecec21bca0b478c04d2d935a32d3, type: 3}
+  categoryProgressBar: {fileID: 21300000, guid: 90fadd2899c31694ca56fcfdaa78efab,
+    type: 3}
+  pointsNeededToUnlock: 8
+  categoryQuestions:
+  - fact: "Kad notika pirmie Visp\u0101\x01r\u0113\x13jie latvie\u0161u Dziesmas sv\u0113\x13tki?"
+    correctAnswer: 1
+    a: 1873
+    b: 1875
+    c: 1897
+    d: 1863
+    icon: {fileID: 21300000, guid: 586ecb96fcd2e5344be338eef743f4a4, type: 3}
+  - fact: Kas ir Latvijas himnas autors?
+    correctAnswer: 3
+    a: "Anda L\u012Bce"
+    b: "Aleksandrs \u010C\fehlovs"
+    c: "Bauma\u0146u K\u0101rlis"
+    d: "Gunta \u0160nipke"
+    icon: {fileID: 21300000, guid: 586ecb96fcd2e5344be338eef743f4a4, type: 3}
+  - fact: "Kur\u0101\x01 gad\x01\u0101 tika izveidota grupa Pr\u0101\x01ta V\x13\u0113tra?"
+    correctAnswer: 1
+    a: 1989
+    b: 1995
+    c: 1987
+    d: 1992
+    icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
+  - fact: "Cik rokgrupai ''L\u012Bvi'' bija albumi"
+    correctAnswer: 3
+    a: 13
+    b: 9
+    c: 5
+    d: 7
+    icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
+  - fact: 'Cik albumus izdeva grupa ''''Tumsa''''? '
+    correctAnswer: 2
+    a: 9
+    b: 7
+    c: 3
+    d: 5
+    icon: {fileID: 21300000, guid: 586ecb96fcd2e5344be338eef743f4a4, type: 3}
