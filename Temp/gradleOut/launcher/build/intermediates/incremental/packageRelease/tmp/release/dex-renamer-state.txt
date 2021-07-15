@@ -1,4 +1,0 @@
-#Thu Jul 15 12:57:45 EEST 2021
-base.0=D\:\\PersonalGithub\\LatvianQuiz\\Temp\\gradleOut\\launcher\\build\\intermediates\\dex\\release\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
