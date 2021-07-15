@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using TMPro;
+﻿using UnityEngine;
 using System;
 using UnityEngine.SceneManagement;
+
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] Category[] categories;
@@ -14,16 +12,11 @@ public class MainMenu : MonoBehaviour
     [SerializeField] GameObject categoryPanel;
     public int score;
     float itemSize = 3;
-    //public static int allPointsTogether;
 
     void Start()
     {
-        
         animator = GetComponent<Animator>();
         CreateAllCategorieUI();
-        // GameManager.OnGameRunning += ChangeGameState;
-        // Debug.Log(isGameRunning);
-
     }
 
     private void CreateAllCategorieUI()

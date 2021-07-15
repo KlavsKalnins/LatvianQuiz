@@ -45,14 +45,6 @@ public class CategoriesUIInfo : MonoBehaviour
             categoryIcon.enabled = true;
             Debug.Log("mkm: " + points);
             categoryProgressBar.GetComponent<Image>().fillAmount = (float)points / 5;
-            // timeRemainingImage.GetComponent<Image>().fillAmount = 1;
-            //if (!pressedButton)
-            //    timeRemaining -= Time.deltaTime;
-            //timeRemainingImage.GetComponent<Image>().fillAmount = timeRemaining / 20;
-           // categoryProgressBar.GetComponent<Image>().fillAmount = points / 20;
-            // load data
-            // unlocked
-            //Debug.Log("unlocked");
         }
         else
         {
@@ -63,25 +55,14 @@ public class CategoriesUIInfo : MonoBehaviour
             categoryIcon.enabled = false;
             int pointsNeeded = pointsToUnlockCategory - PlayerPrefs.GetInt("score");
             categoryInfoText.text = "Vēl pietrūkst " + pointsNeeded + " pareizas atbildes";
-            // locked
-            //Debug.Log("Locked");
         }
     }
 
     public void StartGame()
     {
-        // get questions to gamemanager later replace with action or idk static
-        // bc findobject is not good
         GameManager gameManager = FindObjectOfType<GameManager>();
         gameManager.questions = categoryThis.GetCategoryQuestions();
         gameManager.LoadHeader(categoryIcon.sprite,categoryTitle.text);
         gameManager.LoadGameplay();
-
-       // gameManager.StartGame();
-    }
-
-    void Update()
-    {
-
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 using TMPro;
 using UnityEngine.UI;
 using System.Linq;
@@ -95,8 +94,7 @@ public class GameManager : MonoBehaviour
         wrongPanel.SetActive(false);
         GameplayQuestionAnswerCount++;
         headerQuestionCount.text = GameplayQuestionAnswerCount + 1 + "/5";
-
-        //Time.timeScale = 1;
+        
         questionsAnswered++;
         if (questionsAnswered >= 5)
         {
@@ -164,13 +162,6 @@ public class GameManager : MonoBehaviour
     public void LoadGameplay()
     {
         unansweredQuestions = questions.ToList<Question>();
-        /*
-        for (int i = 0; i < questions.Length; i++)
-        {
-            unansweredQuestions.Add(questions[i]);
-            //   unansweredQuestions
-        }
-        */
 
         PickARandomQuestionFromList();
         StartGame();
@@ -198,15 +189,12 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(2f);
         if (correctAnswer == button)
         {
-            //GameplayQuestionAnswerCount++;
             questionsGotRight++;
             correctPanel.SetActive(true);
-            // NextQuestion();
         }
         else
         {
             wrongPanel.SetActive(true);
-            // NextQuestion();
         }
     }
 }
