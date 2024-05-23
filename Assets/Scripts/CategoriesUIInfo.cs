@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 public class CategoriesUIInfo : MonoBehaviour
 {
-    public GameObject gameManager;
+    [SerializeField] Button thisButton;
     public Category categoryThis;
     public TMP_Text categoryTitle;
     public Image categoryIcon;
@@ -19,13 +21,30 @@ public class CategoriesUIInfo : MonoBehaviour
     public TMP_Text categoryInfoText;
     public static int allPointsTogether;
 
+    void OnEnable()
+    {
+        LocalizationSettings.SelectedLocaleChanged += OnLocalizationChange;
+    }
+
+    void OnDisable()
+    {
+        LocalizationSettings.SelectedLocaleChanged -= OnLocalizationChange;
+    }
+
+    void OnLocalizationChange(Locale newLocale = null)
+    {
+        Locale locale = LocalizationSettings.SelectedLocale;
+        string localizedString = LocalizationSettings.StringDatabase.GetLocalizedString(categoryThis.categoryName, locale);
+        categoryTitle.text = localizedString;
+    }
+
     void Start()
     {
-        categoryTitle.text = categoryThis.GetCategoryName().ToString();
-        categoryIcon.sprite = categoryThis.GetCategoryIcon();
-        categoryBackground.sprite = categoryThis.GetCategoryBackground();
+        OnLocalizationChange();
+        categoryIcon.sprite = categoryThis.categoryIcon;
+        categoryBackground.sprite = categoryThis.categoryBackground;
         string title = categoryTitle.text;
-        pointsToUnlockCategory = categoryThis.GetPointsNeededToUnlock();
+        pointsToUnlockCategory = categoryThis.pointsNeededToUnlock;
         points = PlayerPrefs.GetInt(title);
         categoryPoints.text = points.ToString() + "/5";
         // calculate progress bar from points
@@ -43,12 +62,11 @@ public class CategoriesUIInfo : MonoBehaviour
             categoryProgressBar.enabled = true;
             categoryPoints.enabled = true;
             categoryIcon.enabled = true;
-            Debug.Log("mkm: " + points);
-            categoryProgressBar.GetComponent<Image>().fillAmount = (float)points / 5;
+            categoryProgressBar.fillAmount = (float)points / 5;
         }
         else
         {
-            GetComponent<Button>().enabled = false;
+            thisButton.enabled = false;
             locked.SetActive(true);
             categoryProgressBar.enabled = false;
             categoryPoints.enabled = false;
@@ -60,9 +78,8 @@ public class CategoriesUIInfo : MonoBehaviour
 
     public void StartGame()
     {
-        GameManager gameManager = FindObjectOfType<GameManager>();
-        gameManager.questions = categoryThis.GetCategoryQuestions();
-        gameManager.LoadHeader(categoryIcon.sprite,categoryTitle.text);
-        gameManager.LoadGameplay();
+        GameManager.Instance.questions = categoryThis.categoryQuestions;
+        GameManager.Instance.LoadHeader(categoryIcon.sprite,categoryTitle.text);
+        GameManager.Instance.LoadGameplay();
     }
 }

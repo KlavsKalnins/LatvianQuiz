@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: General_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 8634afaafb1314e84aa3a3cb5cbd0f15, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 3995662078036410398
+  m_TableData:
+  - m_Id: 7527718912
+    m_Localized: Latvian\nQuiz
+    m_Metadata:
+      m_Items:
+      - rid: 3995662078036410398
+  - m_Id: 1359964266496
+    m_Localized: categories
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7083398258688
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7189090525184
+    m_Localized: Sport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7238717530112
+    m_Localized: History
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11833523036160
+    m_Localized: to unlock you need {pointsNeeded} points
+    m_Metadata:
+      m_Items:
+      - rid: 3995662078036410398
+  references:
+    version: 2
+    RefIds:
+    - rid: 3995662078036410398
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00e0afc00100000000e0ef34c30a0000

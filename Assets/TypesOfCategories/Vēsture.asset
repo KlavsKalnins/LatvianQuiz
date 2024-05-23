@@ -12,28 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0bf13c2765340f4ab4ab0c4536edd18, type: 3}
   m_Name: "V\u0113sture"
   m_EditorClassIdentifier: 
-  categoryName: "V\u0113sture"
+  categoryName: word_history
   categoryBackground: {fileID: 21300000, guid: bb41603e3d12ea5428a9c1ef437c37af, type: 3}
   categoryIcon: {fileID: 21300000, guid: d81964813feae4a4cbe8dd78d14637a5, type: 3}
   categoryProgressBar: {fileID: 21300000, guid: 90fadd2899c31694ca56fcfdaa78efab,
     type: 3}
   pointsNeededToUnlock: 0
   categoryQuestions:
-  - fact: "kur\u0101\x01 gad\u0101\x01 tika dibin\x01\u0101ta Latvija?"
+  - fact: "kur\u0101 gad\u0101 tika dibin\u0101ta Latvija?"
     correctAnswer: 1
     a: 1918
     b: 1916
     c: 1928
     d: 1818
     icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
-  - fact: "kur\x01\u0101 gad\u0101\x01 tika dibin\x01\u0101ta R\u012Bga?"
+  - fact: "kur\u0101 gad\u0101 tika dibin\u0101ta R\u012Bga?"
     correctAnswer: 3
     a: 1205
     b: 1210
     c: 1201
     d: 1200
     icon: {fileID: 21300000, guid: 600f3eea4bf903642911dddc1fd3dfa4, type: 3}
-  - fact: "kur\u0101\x01 gad\u0101\x01 psrs okup\u0113ja Latviju?"
+  - fact: "kur\u0101 gad\u0101 psrs okup\u0113ja Latviju?"
     correctAnswer: 2
     a: 1945
     b: 1940
@@ -47,32 +47,31 @@ MonoBehaviour:
     c: "K\x01rlis Ulmanis"
     d: "J\x01nis \fakste"
     icon: {fileID: 21300000, guid: f564029f5329267469afef99d60def41, type: 3}
-  - fact: "Kur\u0101\x01 gadsimt\x01\u0101 tika rad\u012Bts Latvijas karogs?"
+  - fact: "Kur\u0101 gadsimt\u0101 tika rad\u012Bts Latvijas karogs?"
     correctAnswer: 1
     a: 19.gs.
     b: 20.gs.
     c: 21.gs.
     d: 18.gs.
     icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
-  - fact: "Kur\u0161 no z\u012Bmoliem ir visvec\x01\u0101kais? "
+  - fact: "Kur\u0161 no z\u012Bmoliem ir visvec\u0101kais? "
     correctAnswer: 2
     a: airBaltic
     b: "R\u012Bgas Melnais balzams"
     c: JZ Microphones
     d: Dzintars
     icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
-  - fact: "Kur\u0161 bijis iev\x13rojam\x01\u0101kais Kurzemes hercogistes hercogs? "
+  - fact: "Kur\u0161 bijis iev\u0113rojam\u0101kais Kurzemes hercogistes hercogs? "
     correctAnswer: 4
     a: "Fr\u012Bdrihs"
     b: Vilhelms
     c: Gothardam Ketleram
     d: "Hercogs J\x13kabs"
     icon: {fileID: 21300000, guid: 73d978389a1d6a04ca5db9c74dc15c48, type: 3}
-  - fact: "Kur\u0161 ir vec\x01\u0101kais publiskais muzejs Latvij\u0101\x01 un Baltij\u0101\x01?
-      \ "
+  - fact: "Kur\u0161 ir vec\u0101kais publiskais muzejs Latvij\u0101 un Baltij\u0101?  "
     correctAnswer: 2
     a: "Latvijas Etnogr\u0101\x01fiskais br\u012Bvdabas muzejs"
     b: "R\u012Bgas Motormuzejs"
-    c: "R\u012Bgas V\x13\u0113stures un Ku\u0123niec\u012Bbas muzejs"
+    c: "R\u012Bgas V\u0113stures un Ku\u0123niec\u012Bbas muzejs"
     d: "Al\u016Bksnes muzejs"
     icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}

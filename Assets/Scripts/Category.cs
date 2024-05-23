@@ -3,18 +3,9 @@
 
 public class Category : ScriptableObject
 {
-    [SerializeField] string categoryName;
-    [SerializeField] Sprite categoryBackground;
-    [SerializeField] Sprite categoryIcon;
-    [SerializeField] Sprite categoryProgressBar;
-    [SerializeField] int pointsNeededToUnlock;
-    [SerializeField] Question[] categoryQuestions;
-    
-    public string GetCategoryName() { return categoryName; }
-    public Sprite GetCategoryBackground() { return categoryBackground; }
-    public Sprite GetCategoryIcon() { return categoryIcon; }
-    public Sprite GetCategoryProgressBar() { return categoryProgressBar; }
-    public int GetPointsNeededToUnlock() { return pointsNeededToUnlock; }
-    public Question[] GetCategoryQuestions() { return categoryQuestions; }
-
+    public string categoryName;
+    public Sprite categoryBackground;
+    public Sprite categoryIcon;
+    public int pointsNeededToUnlock;
+    public Question[] categoryQuestions;
 }

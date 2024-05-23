@@ -7,9 +7,11 @@ using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
+    [SerializeField] GameObject viewGameObject;
     public Question[] questions;
     [SerializeField] bool isGameRunning;
-    Animator animator;
+    [SerializeField] Animator animator;
     [SerializeField] GameObject MainMenu;
     public float timeRemaining;
 
@@ -40,27 +42,14 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        int gameStatusCount = FindObjectsOfType<GameManager>().Length;
-        if (gameStatusCount > 1)
-        {
-            gameObject.SetActive(false);
-            Destroy(gameObject);
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-        }
-        timeRemainingImage.GetComponent<Image>().fillAmount = 1;
-    }
-    void Start()
-    {
-        animator = GetComponent<Animator>();
+        Instance = this;
+        timeRemainingImage.fillAmount = 1;
     }
 
-    void Update()
+    public void ToggleGame(bool value)
     {
+        isGameRunning = value;
         GameplayLogic();
-        KeyboardSwitchBetweenGameStates();
     }
 
     private void GameplayLogic()
@@ -69,6 +58,7 @@ public class GameManager : MonoBehaviour
         {
             ChangeGameState();
             GameIsRunning();
+            viewGameObject.SetActive(true);
         }
         else
         {
@@ -81,7 +71,7 @@ public class GameManager : MonoBehaviour
     {
         if (!pressedButton)
             timeRemaining -= Time.deltaTime;
-        timeRemainingImage.GetComponent<Image>().fillAmount = timeRemaining / 20;
+        timeRemainingImage.fillAmount = timeRemaining / 20;
         if (timeRemaining < 0)
         {
             NextQuestion();
@@ -94,13 +84,13 @@ public class GameManager : MonoBehaviour
         wrongPanel.SetActive(false);
         GameplayQuestionAnswerCount++;
         headerQuestionCount.text = GameplayQuestionAnswerCount + 1 + "/5";
-        
+
         questionsAnswered++;
         if (questionsAnswered >= 5)
         {
             string title = headerTitle.text;
             if (PlayerPrefs.GetInt(title) < questionsGotRight)
-                PlayerPrefs.SetInt(headerTitle.text, questionsGotRight);              
+                PlayerPrefs.SetInt(headerTitle.text, questionsGotRight);
             MainMenu.GetComponent<MainMenu>().RecalculateUI();
         }
         unansweredQuestions.Remove(currentQuestion);
@@ -108,22 +98,12 @@ public class GameManager : MonoBehaviour
         UpdateUINewQuestion();
     }
 
-    private void KeyboardSwitchBetweenGameStates()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            isGameRunning = false;
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            isGameRunning = true;
-        }
-    }
     private void ChangeGameState()
     {
         animator.SetBool("gameIsRunning", isGameRunning);
         MainMenu.SetActive(!isGameRunning);
     }
+
     public void GoToMainMenu()
     {
         isGameRunning = false;
@@ -138,13 +118,16 @@ public class GameManager : MonoBehaviour
     {
         UpdateUINewQuestion();
         isGameRunning = true;
+        viewGameObject.SetActive(true);
+
+        ChangeGameState();
     }
+
     private void UpdateUINewQuestion()
     {
-        timeRemainingImage.GetComponent<Image>().fillAmount = 1;
+        timeRemainingImage.fillAmount = 1;
         timeRemaining = 20;
         fact.text = currentQuestion.fact;
-        Debug.Log("2");
         correctAnswer = currentQuestion.correctAnswer;
         icon.sprite = currentQuestion.icon;
         a.text = currentQuestion.a;
@@ -153,12 +136,14 @@ public class GameManager : MonoBehaviour
         d.text = currentQuestion.d;
         pressedButton = false;
     }
+
     public void LoadHeader(Sprite hIcon, string hTitle)
     {
         headerIcon.sprite = hIcon;
         headerTitle.text = hTitle;
         headerQuestionCount.text = GameplayQuestionAnswerCount + 1 + "/5";
     }
+
     public void LoadGameplay()
     {
         unansweredQuestions = questions.ToList<Question>();
@@ -175,15 +160,17 @@ public class GameManager : MonoBehaviour
         } else
         {
             randomQuestion = UnityEngine.Random.Range(0, unansweredQuestions.Count);
+            randomQuestion = 0;
             currentQuestion = unansweredQuestions[randomQuestion];
-
         }
     }
+
     public void ButtonAnswerPress(int button)
     {
         pressedButton = true;
         StartCoroutine(ConclusionToPressed(button));
     }
+
     IEnumerator ConclusionToPressed(int button)
     {
         yield return new WaitForSeconds(2f);
