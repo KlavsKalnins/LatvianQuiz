@@ -37,13 +37,18 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject correctPanel;
     [SerializeField] GameObject wrongPanel;
-    bool pressedButton = false;
+    [SerializeField] bool pressedButton = false;
     int questionsGotRight;
 
     private void Awake()
     {
         Instance = this;
         timeRemainingImage.fillAmount = 1;
+    }
+
+    private void Update()
+    {
+        GameplayLogic();
     }
 
     public void ToggleGame(bool value)
@@ -146,7 +151,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadGameplay()
     {
-        unansweredQuestions = questions.ToList<Question>();
+        unansweredQuestions = questions.ToList();
 
         PickARandomQuestionFromList();
         StartGame();
@@ -160,7 +165,7 @@ public class GameManager : MonoBehaviour
         } else
         {
             randomQuestion = UnityEngine.Random.Range(0, unansweredQuestions.Count);
-            randomQuestion = 0;
+            // randomQuestion = 0;
             currentQuestion = unansweredQuestions[randomQuestion];
         }
     }
@@ -178,6 +183,7 @@ public class GameManager : MonoBehaviour
         {
             questionsGotRight++;
             correctPanel.SetActive(true);
+            ConfettiManager.Instance.PlayParticle();
         }
         else
         {

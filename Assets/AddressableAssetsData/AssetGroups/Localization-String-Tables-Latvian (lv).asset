@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Localization-String-Tables-Latvian (lv)
   m_EditorClassIdentifier: 
   m_GroupName: Localization-String-Tables-Latvian (lv)
-  m_Data:
-    m_SerializedData: []
   m_GUID: a8f0372cf2ea5434393d8f02767663f9
   m_SerializeEntries:
   - m_GUID: ce0157823936a45c1b794b29f5121fdb

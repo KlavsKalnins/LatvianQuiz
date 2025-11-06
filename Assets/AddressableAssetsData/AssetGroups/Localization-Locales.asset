@@ -13,30 +13,28 @@ MonoBehaviour:
   m_Name: Localization-Locales
   m_EditorClassIdentifier: 
   m_GroupName: Localization-Locales
-  m_Data:
-    m_SerializedData: []
   m_GUID: b14f34d72712e48beafac104474a4562
   m_SerializeEntries:
-  - m_GUID: 7613e114eb0864fb3953e4fd1cb3d1ed
-    m_Address: English (en)
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ed7817add80e245069c8de48040d3452
-    m_Address: Russian (ru)
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 098d07f9d7ac04bb5b0b4a96bc1f76fa
     m_Address: Latvian (lv)
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7613e114eb0864fb3953e4fd1cb3d1ed
+    m_Address: English (en)
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a09cf0bc7ed6f4c3a952037cb67c4f29
     m_Address: Danish (Denmark) (da-DK)
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed7817add80e245069c8de48040d3452
+    m_Address: Russian (ru)
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
