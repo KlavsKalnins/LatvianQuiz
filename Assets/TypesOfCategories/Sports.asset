@@ -24,10 +24,44 @@ MonoBehaviour:
     c: 2,40 m
     d: 2,13 m
     icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
-  - fact: Sports 2
-    correctAnswer: 1
-    a: 'utuy  u uy '
-    b: '  jh j j j f '
-    c: ' kj k  ljl lj'
-    d: ' s rrd '
-    icon: {fileID: 21300000, guid: c2e4e19c84a96d74785dac8827d44b84, type: 3}
+  - fact: "Kur\u0161 Latvijas hokejists ir vien\u012Bgais, kas ieguvis Stenlija kausu?"
+    correctAnswer: 2
+    a: "Sandis Ozoli\u0146\u0161"
+    b: "Art\u016Brs Irbe"
+    c: "Harijs V\u012Btoli\u0146\u0161"
+    d: Zemgus Girgensons
+    icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
+  - fact: "Kur\u0161 Latvijas basketbolists 2023. gad\u0101 izc\u012Bn\u012Bja Nacion\u0101l\u0101s
+      basketbola asoci\u0101cijas (NBA) \u010Dempiona titulu ar Denveras \"Nuggets\"
+      komandu?"
+    correctAnswer: 2
+    a: "J\u0101nis Timma"
+    b: "D\u0101vis Bert\u0101ns"
+    c: "Kristaps Porzi\u0146\u0123is"
+    d: Rodions Kurucs
+    icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
+  - fact: "Kura Latvijas tenisiste ir sasniegusi 4. vietu WTA pasaules rang\u0101
+      un uzvar\u0113jusi French Open (Roland Garros) Junioru turn\u012Br\u0101?"
+    correctAnswer: 2
+    a: Anastasija Sevastova
+    b: "L\u012Bga Dekmeijere"
+    c: "Je\u013Cena Ostapenko"
+    d: Larisa Neilande
+    icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
+  - fact: "Kur\u0161 sporta veids ir tradicion\u0101li vispopul\u0101r\u0101kais
+      un apmekl\u0113t\u0101kais Latvij\u0101, \u012Bpa\u0161i ziemas sezon\u0101?"
+    correctAnswer: 2
+    a: Basketbols
+    b: Futbols
+    c: Hokejs
+    d: Volejbols
+    icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
+  - fact: "K\u0101 sauc Latvijas skeletonistu, kur\u0161 ir k\u013Cuvis par Pasaules
+      un Eiropas \u010Dempionu, un ir ieguvis divas Olimpisk\u0101s meda\u013Cas
+      (sudrabu un bronzu)?"
+    correctAnswer: 2
+    a: "J\u0101nis Strenga"
+    b: "Oskars Melb\u0101rdis"
+    c: Martins Dukurs
+    d: Tomass Dukurs
+    icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}

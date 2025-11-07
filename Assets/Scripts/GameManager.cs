@@ -22,10 +22,8 @@ public class GameManager : MonoBehaviour
     // UI
     public TMP_Text fact;
     public int correctAnswer;
-    public TMP_Text a;
-    public TMP_Text b;
-    public TMP_Text c;
-    public TMP_Text d;
+    
+    [SerializeField] private AnswerButton[] answerButtons;
     public Image timeRemainingImage;
     public Image icon;
 
@@ -85,6 +83,7 @@ public class GameManager : MonoBehaviour
 
     public void NextQuestion()
     {
+        AnswerButton.canPressButton = true;
         correctPanel.SetActive(false);
         wrongPanel.SetActive(false);
         GameplayQuestionAnswerCount++;
@@ -135,10 +134,11 @@ public class GameManager : MonoBehaviour
         fact.text = currentQuestion.fact;
         correctAnswer = currentQuestion.correctAnswer;
         icon.sprite = currentQuestion.icon;
-        a.text = currentQuestion.a;
-        b.text = currentQuestion.b;
-        c.text = currentQuestion.c;
-        d.text = currentQuestion.d;
+        
+        answerButtons[0].SetPresentation(currentQuestion.a);
+        answerButtons[1].SetPresentation(currentQuestion.b);
+        answerButtons[2].SetPresentation(currentQuestion.c);
+        answerButtons[3].SetPresentation(currentQuestion.d);
         pressedButton = false;
     }
 
@@ -172,6 +172,7 @@ public class GameManager : MonoBehaviour
 
     public void ButtonAnswerPress(int button)
     {
+        if (pressedButton) return;
         pressedButton = true;
         StartCoroutine(ConclusionToPressed(button));
     }

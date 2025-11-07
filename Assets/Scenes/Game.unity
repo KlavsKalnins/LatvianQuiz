@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 16058035}
   - component: {fileID: 16058039}
+  - component: {fileID: 16058040}
   - component: {fileID: 16058038}
   - component: {fileID: 16058037}
   - component: {fileID: 16058036}
@@ -200,7 +201,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 0.29803923, g: 0.101960786, b: 0.15686275, a: 1}
     m_HighlightedColor: {r: 0.29803923, g: 0.10196079, b: 0.15686275, a: 1}
@@ -225,28 +226,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 619875722}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ButtonAnswerPress
-        m_Mode: 3
+      - m_Target: {fileID: 16058040}
+        m_TargetAssemblyTypeName: AnswerButton, Assembly-CSharp
+        m_MethodName: OnButtonPressed
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 16058036}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: ButtonA_Pressed
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &16058038
@@ -262,7 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.29803923, g: 0.101960786, b: 0.15686275, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -287,6 +276,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16058034}
   m_CullTransparentMesh: 0
+--- !u!114 &16058040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16058034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fcc355b6ac6a9d4a98e47fcd313f078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
+  buttonText: {fileID: 2067735894}
+  animator: {fileID: 16058036}
 --- !u!1 &88468897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,6 +1645,7 @@ GameObject:
   m_Component:
   - component: {fileID: 591791138}
   - component: {fileID: 591791142}
+  - component: {fileID: 591791143}
   - component: {fileID: 591791141}
   - component: {fileID: 591791140}
   - component: {fileID: 591791139}
@@ -1712,7 +1717,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 0.29803923, g: 0.101960786, b: 0.15686275, a: 1}
     m_HighlightedColor: {r: 0.29803923, g: 0.10196079, b: 0.15686275, a: 1}
@@ -1737,28 +1742,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 619875722}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ButtonAnswerPress
-        m_Mode: 3
+      - m_Target: {fileID: 591791143}
+        m_TargetAssemblyTypeName: AnswerButton, Assembly-CSharp
+        m_MethodName: OnButtonPressed
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 591791139}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: ButtonA_Pressed
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &591791141
@@ -1774,7 +1767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.29803923, g: 0.101960786, b: 0.15686275, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1799,6 +1792,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591791137}
   m_CullTransparentMesh: 0
+--- !u!114 &591791143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591791137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fcc355b6ac6a9d4a98e47fcd313f078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 3
+  buttonText: {fileID: 1704121226}
+  animator: {fileID: 591791139}
 --- !u!1 &619875721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,10 +1847,11 @@ MonoBehaviour:
   headerQuestionCount: {fileID: 957541071}
   fact: {fileID: 843038426}
   correctAnswer: 0
-  a: {fileID: 1557817688}
-  b: {fileID: 481763147}
-  c: {fileID: 2067735894}
-  d: {fileID: 1704121226}
+  answerButtons:
+  - {fileID: 1846576900}
+  - {fileID: 750330782}
+  - {fileID: 16058040}
+  - {fileID: 591791143}
   timeRemainingImage: {fileID: 1366576526}
   icon: {fileID: 1736062267}
   currentQuestion:
@@ -2157,6 +2166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 750330777}
   - component: {fileID: 750330781}
+  - component: {fileID: 750330782}
   - component: {fileID: 750330780}
   - component: {fileID: 750330779}
   - component: {fileID: 750330778}
@@ -2228,7 +2238,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 0.29803923, g: 0.101960786, b: 0.15686275, a: 1}
     m_HighlightedColor: {r: 0.29803923, g: 0.10196079, b: 0.15686275, a: 1}
@@ -2253,28 +2263,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 619875722}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ButtonAnswerPress
-        m_Mode: 3
+      - m_Target: {fileID: 750330782}
+        m_TargetAssemblyTypeName: AnswerButton, Assembly-CSharp
+        m_MethodName: OnButtonPressed
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 750330778}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: ButtonA_Pressed
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &750330780
@@ -2290,7 +2288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.29803923, g: 0.101960786, b: 0.15686275, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2315,6 +2313,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750330776}
   m_CullTransparentMesh: 0
+--- !u!114 &750330782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750330776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fcc355b6ac6a9d4a98e47fcd313f078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
+  buttonText: {fileID: 481763147}
+  animator: {fileID: 750330778}
 --- !u!1 &771461153
 GameObject:
   m_ObjectHideFlags: 0
@@ -3070,7 +3083,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3281,7 +3294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3962,7 +3975,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4101,7 +4114,6 @@ GameObject:
   - component: {fileID: 1305330597}
   - component: {fileID: 1305330596}
   - component: {fileID: 1305330595}
-  - component: {fileID: 1305330594}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4129,28 +4141,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 35}
   m_SizeDelta: {x: -400, y: 136}
   m_Pivot: {x: 0.5, y: 0}
---- !u!95 &1305330594
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305330592}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 943a923c37bc3e84b89e0d0887448255, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1305330595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4281,7 +4271,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!114 &1310913315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5147,7 +5137,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6100,6 +6090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1846576895}
   - component: {fileID: 1846576898}
+  - component: {fileID: 1846576900}
   - component: {fileID: 1846576897}
   - component: {fileID: 1846576896}
   - component: {fileID: 1846576899}
@@ -6149,7 +6140,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 0.29803923, g: 0.101960786, b: 0.15686275, a: 1}
     m_HighlightedColor: {r: 0.29803923, g: 0.10196079, b: 0.15686275, a: 1}
@@ -6174,28 +6165,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 619875722}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ButtonAnswerPress
-        m_Mode: 3
+      - m_Target: {fileID: 1846576900}
+        m_TargetAssemblyTypeName: AnswerButton, Assembly-CSharp
+        m_MethodName: OnButtonPressed
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1846576899}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: ButtonA_Pressed
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1846576897
@@ -6211,7 +6190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.29803923, g: 0.101960786, b: 0.15686275, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6258,6 +6237,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1846576900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846576894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fcc355b6ac6a9d4a98e47fcd313f078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  buttonText: {fileID: 1557817688}
+  animator: {fileID: 1846576899}
 --- !u!1 &1951054270
 GameObject:
   m_ObjectHideFlags: 0
@@ -6539,7 +6533,6 @@ GameObject:
   - component: {fileID: 2076089615}
   - component: {fileID: 2076089614}
   - component: {fileID: 2076089613}
-  - component: {fileID: 2076089612}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -6567,28 +6560,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 180}
   m_SizeDelta: {x: -400, y: 136}
   m_Pivot: {x: 0.5, y: 0}
---- !u!95 &2076089612
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2076089610}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 943a923c37bc3e84b89e0d0887448255, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2076089613
 MonoBehaviour:
   m_ObjectHideFlags: 0

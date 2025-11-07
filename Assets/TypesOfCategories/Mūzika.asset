@@ -15,7 +15,7 @@ MonoBehaviour:
   categoryName: word_music
   categoryBackground: {fileID: 21300000, guid: 600f3eea4bf903642911dddc1fd3dfa4, type: 3}
   categoryIcon: {fileID: 21300000, guid: bacdecec21bca0b478c04d2d935a32d3, type: 3}
-  pointsNeededToUnlock: 20
+  pointsNeededToUnlock: 10
   categoryQuestions:
   - fact: "Kad notika pirmie Visp\u0101r\u0113jie latvie\u0161u Dziesmas sv\u0113tki?"
     correctAnswer: 1
@@ -38,17 +38,20 @@ MonoBehaviour:
     c: 1987
     d: 1992
     icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
-  - fact: "Cik rokgrupai ''L\u012Bvi'' bija albumi"
-    correctAnswer: 3
-    a: 13
-    b: 9
-    c: 5
-    d: 7
-    icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
-  - fact: 'Cik albumus izdeva grupa ''''Tumsa''''? '
+  - fact: "Kur\u0161 no \u0161iem komponistiem ir sarakst\u012Bjis operu \"Ugun\u012B
+      un nakt\u012B\" un tiek uzskat\u012Bts par latvie\u0161u nacion\u0101l\u0101s
+      operas pamatlic\u0113ju?"
     correctAnswer: 2
-    a: 9
-    b: 7
-    c: 3
-    d: 5
+    a: "J\u0101zeps V\u012Btols"
+    b: "P\u0113teris Vasks"
+    c: "Alfr\u0113ds Kalni\u0146\u0161"
+    d: Emilis Melngailis
+    icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
+  - fact: "Kura no \u0161\u012Bm oper\u0101m ir vispopul\u0101r\u0101k\u0101 un atpaz\u012Bstam\u0101k\u0101
+      J\u0101\u0146a Medi\u0146a opera?"
+    correctAnswer: 3
+    a: "Dievi un cilv\u0113ki"
+    b: "P\u016Bt, v\u0113ji\u0146i!"
+    c: Uguns un nakts
+    d: Vaidelote
     icon: {fileID: 21300000, guid: 586ecb96fcd2e5344be338eef743f4a4, type: 3}

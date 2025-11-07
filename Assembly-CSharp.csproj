@@ -51,6 +51,7 @@
     <Compile Include="Assets\Scripts\ConfettiManager.cs" />
     <Compile Include="Assets\Scripts\Question.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\AnswerButton.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Category.cs" />
     <Compile Include="Assets\Scripts\CategoriesUIInfo.cs" />

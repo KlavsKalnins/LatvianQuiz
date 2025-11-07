@@ -42,8 +42,8 @@ MonoBehaviour:
     correctAnswer: 4
     a: Alberts Kviesis
     b: Gustavs Zemgals
-    c: "K\x01rlis Ulmanis"
-    d: "J\x01nis \fakste"
+    c: "K\u0101rlis Ulmanis"
+    d: "J\u0101nis \u010Cakste"
     icon: {fileID: 21300000, guid: f564029f5329267469afef99d60def41, type: 3}
   - fact: "Kur\u0101 gadsimt\u0101 tika rad\u012Bts Latvijas karogs?"
     correctAnswer: 1
@@ -68,7 +68,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
   - fact: "Kur\u0161 ir vec\u0101kais publiskais muzejs Latvij\u0101 un Baltij\u0101?  "
     correctAnswer: 2
-    a: "Latvijas Etnogr\u0101\x01fiskais br\u012Bvdabas muzejs"
+    a: "Latvijas Etnogr\u0101fiskais br\u012Bvdabas muzejs"
     b: "R\u012Bgas Motormuzejs"
     c: "R\u012Bgas V\u0113stures un Ku\u0123niec\u012Bbas muzejs"
     d: "Al\u016Bksnes muzejs"
