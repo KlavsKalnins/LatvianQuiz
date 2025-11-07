@@ -20,7 +20,7 @@ MonoBehaviour:
     - rid: 3995662078036410398
   m_TableData:
   - m_Id: 7527718912
-    m_Localized: Latvian\nQuiz
+    m_Localized: Latvian Quiz
     m_Metadata:
       m_Items:
       - rid: 3995662078036410398
@@ -41,14 +41,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11833523036160
-    m_Localized: to unlock you need {pointsNeeded} points
+    m_Localized: '{pointsNeeded} correct answers are still missing'
     m_Metadata:
       m_Items:
       - rid: 3995662078036410398
+  - m_Id: 193038031962988544
+    m_Localized: Patriotism
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
     - rid: 3995662078036410398
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00e0afc00100000000e0ef34c30a0000
+        m_Entries: 
+        m_SharedEntries:
+        - id: 7527718912
+        - id: 11833523036160

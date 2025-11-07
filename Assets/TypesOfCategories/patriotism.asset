@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0bf13c2765340f4ab4ab0c4536edd18, type: 3}
+  m_Name: patriotism
+  m_EditorClassIdentifier: 
+  categoryName: word_patriotism
+  categoryBackground: {fileID: 21300000, guid: bb41603e3d12ea5428a9c1ef437c37af, type: 3}
+  categoryIcon: {fileID: 21300000, guid: d81964813feae4a4cbe8dd78d14637a5, type: 3}
+  pointsNeededToUnlock: 0
+  categoryQuestions:
+  - fact: "Kad tika proklam\u0113ta Latvijas Republika?"
+    correctAnswer: 2
+    a: "1920. gada 18. novembr\u012B"
+    b: "1918. gada 11. novembr\u012B"
+    c: "1918. gada 18. novembr\u012B"
+    d: "1940. gada 17. j\u016Bnij\u0101"
+    icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
+  - fact: "Kura no \u0161\u012Bm pils\u0113t\u0101m ir bijusi Latvijas galvaspils\u0113ta
+      vissen\u0101kajos laikos?"
+    correctAnswer: 3
+    a: "R\u012Bga"
+    b: "C\u0113sis"
+    c: Koknese
+    d: Jelgava (Mitava)
+    icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
+  - fact: "Kur\u0161 Latvijas prezidents vad\u012Bja valsti Otr\u0101 pasaules kara
+      s\u0101kum\u0101?"
+    correctAnswer: 0
+    a: "K\u0101rlis Ulmanis"
+    b: Gustavs Zemgals
+    c: Alberts Kviesis
+    d: Valdis Zatlers
+    icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
+  - fact: "Kur\u0101 gad\u0101 Latvija atguva savu neatkar\u012Bbu?"
+    correctAnswer: 1
+    a: "1989. gad\u0101"
+    b: "1991. gad\u0101"
+    c: "1990. gad\u0101"
+    d: "1993. gad\u0101"
+    icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}
+  - fact: "K\u0101du noz\u012Bm\u012Bgu notikumu Latvijas v\u0113stur\u0113 atz\u012Bm\u0113
+      ar \"Barik\u0101\u017Eu laiku\"?"
+    correctAnswer: 1
+    a: "Otr\u0101 pasaules kara beigas"
+    b: "Padomju armijas m\u0113\u0123in\u0101jums g\u0101zt Latvijas vald\u012Bbu
+      1991. gada janv\u0101r\u012B"
+    c: "Latvijas Republikas proklam\u0113\u0161ana"
+    d: "Tautas atmodas s\u0101kums 1980. gadu beig\u0101s"
+    icon: {fileID: 21300000, guid: e43e0cb8e3d3f2145acce2cb67954e6f, type: 3}

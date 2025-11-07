@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Key: word_history
     m_Metadata:
       m_Items: []
+  - m_Id: 193038031962988544
+    m_Key: word_patriotism
+    m_Metadata:
+      m_Items: []
   - m_Id: 11833523036160
     m_Key: points_needed
     m_Metadata:

@@ -49,6 +49,7 @@ public class CategoriesUIInfo : MonoBehaviour
         categoryPoints.text = points.ToString() + "/5";
         // calculate progress bar from points
         // load saved data
+        Debug.Log($"{title} - {points}");
         FindObjectOfType<MainMenu>().AddToScore(points);
         IsTheCategoryUnlocked();
 

@@ -15,9 +15,7 @@ MonoBehaviour:
   categoryName: word_music
   categoryBackground: {fileID: 21300000, guid: 600f3eea4bf903642911dddc1fd3dfa4, type: 3}
   categoryIcon: {fileID: 21300000, guid: bacdecec21bca0b478c04d2d935a32d3, type: 3}
-  categoryProgressBar: {fileID: 21300000, guid: 90fadd2899c31694ca56fcfdaa78efab,
-    type: 3}
-  pointsNeededToUnlock: 8
+  pointsNeededToUnlock: 20
   categoryQuestions:
   - fact: "Kad notika pirmie Visp\u0101r\u0113jie latvie\u0161u Dziesmas sv\u0113tki?"
     correctAnswer: 1
@@ -29,7 +27,7 @@ MonoBehaviour:
   - fact: Kas ir Latvijas himnas autors?
     correctAnswer: 3
     a: "Anda L\u012Bce"
-    b: "Aleksandrs \u010C\fehlovs"
+    b: "Aleksandrs \u010Cehlovs"
     c: "Bauma\u0146u K\u0101rlis"
     d: "Gunta \u0160nipke"
     icon: {fileID: 21300000, guid: 586ecb96fcd2e5344be338eef743f4a4, type: 3}

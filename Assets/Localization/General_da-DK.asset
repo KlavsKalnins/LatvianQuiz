@@ -20,9 +20,7 @@ MonoBehaviour:
     - rid: 3995662078036410400
   m_TableData:
   - m_Id: 7527718912
-    m_Localized: 'Lettisk
-
-      Quiz'
+    m_Localized: Lettisk Quiz
     m_Metadata:
       m_Items:
       - rid: 3995662078036410400
@@ -31,14 +29,33 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11833523036160
-    m_Localized: to unlock you need {pointsNeeded} points
+    m_Localized: '{pointsNeeded} korrekte svar mangler stadig'
     m_Metadata:
       m_Items:
       - rid: 3995662078036410400
+  - m_Id: 7083398258688
+    m_Localized: Musik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7189090525184
+    m_Localized: Sport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7238717530112
+    m_Localized: Historie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193038031962988544
+    m_Localized: Patriotisme
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
     - rid: 3995662078036410400
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00e0afc00100000000e0ef34c30a0000
+        m_Entries: 
+        m_SharedEntries:
+        - id: 7527718912
+        - id: 11833523036160

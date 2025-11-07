@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] bool isGameOn;
     [SerializeField] GameObject categoryPanel;
     public int score;
-    float itemSize = 3;
+    float itemSize = 1;
 
     void Start()
     {
@@ -45,10 +45,4 @@ public class MainMenu : MonoBehaviour
         if (PlayerPrefs.GetInt("score") < score)
             PlayerPrefs.SetInt("score",score);
     }
-
-    public void OpenUrl(string urlLink)
-    {
-        Application.OpenURL(urlLink);
-    }
-    
 }
